@@ -1,16 +1,16 @@
-# JavaScript Algorithms and Data Structures
+# Thuật toán và cấu trúc dữ liệu với JavaScript
 
 [![Build Status](https://travis-ci.org/trekhleb/javascript-algorithms.svg?branch=master)](https://travis-ci.org/trekhleb/javascript-algorithms)
 [![codecov](https://codecov.io/gh/trekhleb/javascript-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/javascript-algorithms)
 
-This repository contains JavaScript based examples of many
-popular algorithms and data structures.
+**Note**: Vì một số thuật ngữ dịch sang tiếng Anh sẽ hơi khó hiểu nên tôi sẽ giữ nguyên tiếng Anh, hy vọng bạn đọc sẽ thông cảm.
 
-Each algorithm and data structure has its own separate README
-with related explanations and links for further reading (including ones
-to YouTube videos).
+Repository này chứa ví dụ về các thuật toán và cấu trúc dữ liệu phổ biến được viết bằng ngôn ngữ JavaScript.
 
-_Read this in other languages:_
+Mỗi thuật toán và cấu trúc dữ liệu đều có một file README riêng biệt bao gồm các giải thích cùng với những link liên quan mà bạn có thể tham khảo thêm (bao gồm cả các video từ Youtube).
+
+_Đọc bài này ở các ngôn ngữ khác:_
+[_English_](README.md),
 [_简体中文_](README.zh-CN.md),
 [_繁體中文_](README.zh-TW.md),
 [_한국어_](README.ko-KR.md),
@@ -18,22 +18,18 @@ _Read this in other languages:_
 [_Polski_](README.pl-PL.md),
 [_Français_](README.fr-FR.md),
 [_Español_](README.es-ES.md),
-[_Português_](README.pt-BR.md),
-[_Tiếng Việt_](README.vi-VN.md)
+[_Português_](README.pt-BR.md)
 
-*☝ Note that this project is meant to be used for learning and researching purposes 
-only and it is **not** meant to be used for production.*
+*☝ Lưu ý rằng dự án này được chỉ được sử dụng cho mục đích học tập và nghiên cứu chứ nó **không đảm bảo** được dùng trong các dự án thực tế.*
 
-## Data Structures
+## Cấu trúc dữ liệu
 
-A data structure is a particular way of organizing and storing data in a computer so that it can
-be accessed and modified efficiently. More precisely, a data structure is a collection of data
-values, the relationships among them, and the functions or operations that can be applied to
-the data.
+Cấu trúc dữ liệu là một cách cụ thể để tổ chức và lưu trữ dữ liệu trong máy tính để nó có thể
+được truy cập và sửa đổi một cách hiệu quả. Chính xác hơn, cấu trúc dữ liệu là một tập hợp dữ liệu các giá trị, mối quan hệ giữa chúng và các chức năng hoặc hoạt động có thể được áp dụng cho dữ liệu.
 
-`B` - Beginner, `A` - Advanced
+`B` - Mới bắt đầu (Beginner), `A` - Nâng cao (Advanced)
 
-* `B` [Linked List](src/data-structures/linked-list)
+* `B` [Danh sách liên kết](src/data-structures/linked-list)
 * `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 * `B` [Queue](src/data-structures/queue)
 * `B` [Stack](src/data-structures/stack)
@@ -51,17 +47,16 @@ the data.
 * `A` [Disjoint Set](src/data-structures/disjoint-set)
 * `A` [Bloom Filter](src/data-structures/bloom-filter)
 
-## Algorithms
+## Thuật toán
 
-An algorithm is an unambiguous specification of how to solve a class of problems. It is
-a set of rules that precisely define a sequence of operations.
+Thuật toán là một đặc tả rõ ràng về cách giải quyết một lớp vấn đề. Nó là một tập hợp các quy tắc xác định chính xác một chuỗi các hoạt động.
 
-`B` - Beginner, `A` - Advanced
+`B` - Mới bắt đầu (Beginner), `A` - Nâng cao (Advanced)
 
 ### Algorithms by Topic
 
 * **Math**
-  * `B` [Bit Manipulation](src/algorithms/math/bits) - set/get/update/clear bits, multiplication/division by two, make negative etc.
+  * `B` [Thao tác trên Bit](src/algorithms/math/bits) - set/get/update/clear bits, multiplication/division by two, make negative etc.
   * `B` [Factorial](src/algorithms/math/factorial) 
   * `B` [Fibonacci Number](src/algorithms/math/fibonacci) - classic and closed-form versions
   * `B` [Primality Test](src/algorithms/math/primality-test) (trial division method)
@@ -149,7 +144,7 @@ a set of rules that precisely define a sequence of operations.
   * `A` [N-Queens Problem](src/algorithms/uncategorized/n-queens)
   * `A` [Knight's Tour](src/algorithms/uncategorized/knight-tour)
 
-### Algorithms by Paradigm
+### Mô hình thuật toán
 
 An algorithmic paradigm is a generic method or approach which underlies the design of a class
 of algorithms. It is an abstraction higher than the notion of an algorithm, just as an
@@ -214,27 +209,27 @@ a least-cost solution to the problem, in order to discard partial solutions with
 lowest-cost solution found so far. Normally BFS traversal in combination with DFS traversal of state-space
 tree is being used.
 
-## How to use this repository
+## Làm thế nào để sử dụng repository này
 
-**Install all dependencies**
+**Cài đặt tất cả thư viện phụ thuộc**
 ```
 npm install
 ```
 
-**Run ESLint**
+**Chạy ESLint**
 
-You may want to run it to check code quality.
+Bạn có thể chạy để kiểm tra chất lượng code bằng lệnh sau:
 
 ```
 npm run lint
 ```
 
-**Run all tests**
+**Chạy toàn bộ các test case**
 ```
 npm test
 ```
 
-**Run tests by name**
+**Chạy test thông qua tên**
 ```
 npm test -- 'LinkedList'
 ```
@@ -250,20 +245,20 @@ Then just simply run the following command to test if your playground code works
 npm test -- 'playground'
 ```
 
-## Useful Information
+## Các thông tin hữu ích
 
-### References
+### Tham khảo
 
-[▶ Data Structures and Algorithms on YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+[▶ Cấu trúc dữ liệu và thuật toán trên YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
 
-### Big O Notation
+### Ký hiệu Big O
 
-*Big O notation* is used to classify algorithms according to how their running time or space requirements grow as the input size grows.
+*Ký hiệu Big O*  được sử dụng để phân loại các thuật toán theo yêu cầu về thời gian chạy hoặc bộ nhớ của chúng tăng thế nào khi số lượng đầu vào tăng lên.
 On the chart below you may find most common orders of growth of algorithms specified in Big O notation.
 
-![Big O graphs](./assets/big-o-graph.png)
+![Biểu đồ Big O](./assets/big-o-graph.png)
 
-Source: [Big O Cheat Sheet](http://bigocheatsheet.com/).
+Nguồn: [Big O Cheat Sheet](http://bigocheatsheet.com/).
 
 Below is the list of some of the most used Big O notations and their performance comparisons against different sizes of the input data.
 
@@ -292,9 +287,9 @@ Below is the list of some of the most used Big O notations and their performance
 | **AVL Tree**            | log(n)    | log(n)    | log(n)    | log(n)    |           |
 | **Bloom Filter**        | -         | 1         | 1         | -         | False positives are possible while searching |
 
-### Array Sorting Algorithms Complexity
+### Độ phức tạp của các thuật toán sắp xếp mảng
 
-| Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
+| Tên                  | Tốt nhất            | Trung bình             | Kém nhất               | Bộ nhớ    | Ổn định    | Chú ý  |
 | --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **Bubble sort**       | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Yes       |           |
 | **Insertion sort**    | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Yes       |           |
@@ -306,6 +301,6 @@ Below is the list of some of the most used Big O notations and their performance
 | **Counting sort**     | n + r           | n + r               | n + r               | n + r     | Yes       | r - biggest number in array |
 | **Radix sort**        | n * k           | n * k               | n * k               | n + k     | Yes       | k - length of longest key |
 
-## Supporting the project
+## Hỗ trợ dự án
 
-You may support this project via ❤️️ [GitHub](https://github.com/sponsors/trekhleb) or ❤️️ [Patreon](https://www.patreon.com/trekhleb).          
+Bạn có thể hỗ trợ dự án này thông qua các đường link sau: ❤️️ [GitHub](https://github.com/sponsors/trekhleb) or ❤️️ [Patreon](https://www.patreon.com/trekhleb). 

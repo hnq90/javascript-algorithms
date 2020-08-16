@@ -1,34 +1,19 @@
-# Linked List
+# Danh sách liên kết
 
-_Read this in other languages:_
+_Đọc bài này ở các ngôn ngữ khác:_
+[_English_](README.md),
 [_简体中文_](README.zh-CN.md),
 [_Русский_](README.ru-RU.md),
 [_日本語_](README.ja-JP.md),
-[_Português_](README.pt-BR.md),
-[_Tiếng Việt_](README.vi-VN.md)
+[_Português_](README.pt-BR.md)
 
-In computer science, a **linked list** is a linear collection 
-of data elements, in which linear order is not given by 
-their physical placement in memory. Instead, each 
-element points to the next. It is a data structure 
-consisting of a group of nodes which together represent 
-a sequence. Under the simplest form, each node is 
-composed of data and a reference (in other words, 
-a link) to the next node in the sequence. This structure
-allows for efficient insertion or removal of elements 
-from any position in the sequence during iteration. 
-More complex variants add additional links, allowing 
-efficient insertion or removal from arbitrary element 
-references. A drawback of linked lists is that access 
-time is linear (and difficult to pipeline). Faster 
-access, such as random access, is not feasible. Arrays 
-have better cache locality as compared to linked lists.
+Trong khoa học máy tính, một  **danh sách liên kết (linked list)** là một tập hợp tuyến tính của các phần tử dữ liệu, trong đó thứ tự tuyến tính không được cung cấp bởi vị trí vật lý của chúng trong bộ nhớ. Thay vào đso, mỗi phần tử trỏ đến phần tử tiếp theo. Nó là một cấu trúc dữ liệu bao gồm một nhóm các nút (node) cùng đại diện cho một chuỗi. Dưới dạng đơn giản nhất, mỗi nút (node) bao gồm dữ liệu và một tham chiếu (nói cách khác đó là một liên kết) đến nút (node) tiếp theo trong chuỗi. Cấu trúc này cho phép chèn hoặc loại bỏ các phần tử một cách hiệu quả từ một vị trí bất kỳ trong chuỗi trong quá trình lặp lại. Các biến thể phức tạp hơn thêm các liên kết bổ sung, cho phép chèn hoặc xoá một cách hiệu quả từ các tham chiếu của một phần tử bất kỳ. Một hạn chế của **danh sách liên kết (linked list)** là thời gian truy cập là tuyến tính (và khó để thực hiện song song (pipeline)). Truy cập nhanh hơn, chẳng hạn như truy cập ngẫu nhiên, là không khả thi. Mảng có vị trí bộ nhớ cache tốt hơn so với **danh sách liên kết (linked list)**.
 
-![Linked List](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
+![Danh sách liên kết](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
 
-## Pseudocode for Basic Operations
+## Giả mã cho các thao tác cơ bản
 
-### Insert
+### Chèn
 
 ```text
 Add(value)
@@ -58,7 +43,7 @@ Prepend(value)
 end Prepend
 ```
 
-### Search
+### Tìm kiếm
 
 ```text
 Contains(head, value)
@@ -75,8 +60,8 @@ Contains(head, value)
   return true
 end Contains
 ```
-    
-### Delete
+
+### Xoá
 
 ```text
 Remove(head, value)
@@ -110,7 +95,7 @@ Remove(head, value)
 end Remove
 ```
 
-### Traverse
+### Duyệt
 
 ```text
 Traverse(head)
@@ -124,7 +109,7 @@ Traverse(head)
 end Traverse
 ```
 
-### Traverse in Reverse
+### Duyệt theo chiều ngược lại
 
 ```text
 ReverseTraversal(head, tail)
@@ -145,19 +130,19 @@ ReverseTraversal(head, tail)
 end ReverseTraversal
 ```
 
-## Complexities
+## Độ phức tạp
 
-### Time Complexity
+### Độ phức tạp về thời gian
 
-| Access    | Search    | Insertion | Deletion  |
+| Truy cập    | Tìm kiếm    | Chèn | Xoá  |
 | :-------: | :-------: | :-------: | :-------: |
 | O(n)      | O(n)      | O(1)      | O(n)      |
 
-### Space Complexity
+### Độ phức tạp về bộ nhớ
 
 O(n)
 
-## References
+## Dẫn chứng
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
 - [YouTube](https://www.youtube.com/watch?v=njTh_OwMljA&index=2&t=1s&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
